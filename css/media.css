@@ -1,0 +1,85 @@
+@media (max-width: 1140px) {
+    .main-title{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 992px) {
+    .trailer{
+        background: linear-gradient(90deg, #def7ff73 0%, #f4fcff73 45.31%, rgba(255, 255, 255, 0) 100%);
+        text-align: center;
+    }
+    .trailer p{
+        margin: 30px auto;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger{
+        display: block;
+        visibility: visible;
+    }
+    .header__nav-list{
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(0,0,0,0.6923144257703081) 0%, rgba(47,84,154,0.5802696078431373) 25%, rgba(53,96,176,0.5886729691876751) 52%, rgba(163,185,228,0.7903536414565826) 83%, rgba(148,187,233,0.5662640056022409) 100%);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transform: translateY(-200%);
+        transition: 900ms;
+    }
+    .burger:hover ~ .header__nav-list{
+        transform: translateY(0);
+    }
+    .header__nav-list a{
+        font-size: 18px;
+    }
+    .series__grid{
+        grid-template-rows: repeat(4, 202px);
+    }
+    .series__grid-card:first-of-type{
+        grid-column: span 12;
+    }
+    .series__grid-card{
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 476px) {
+    .trailer img{
+        width: 100%;
+    }
+    .trailer p{
+        line-height: 21px;
+        font-size: 18px;
+    }
+    .series__grid{
+        grid-template-rows: repeat(6, 202px);
+    }
+    .series__grid-card{
+        grid-column: span 12;
+    }
+    .series__main p{
+        line-height: 18px;
+    }
+    .series__main h3{
+        font-size: 26px;
+    }
+    .header__content h1{
+        font-size: 44px;
+    }
+    .btn{
+        display: inline;
+        padding: 8px 23px;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    .header__content{
+        background: url('../images/headerBgAdapt.jpg') center / cover;
+        background-color: rgba(7, 15, 25, 0.75);
+        background-blend-mode: multiply;
+    }
+}
